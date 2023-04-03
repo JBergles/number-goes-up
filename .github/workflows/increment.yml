@@ -1,0 +1,17 @@
+name: Test Increment Workflow
+
+jobs:
+  increment:
+    runs-on: ubuntu-latest
+      - uses: actions/checkout@v2
+
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.repos.createOrUpdateFileContents({
+              owner: "jbergles",
+              repo: "number-goes-up",
+              path: "number.txt",
+              mesasge: "doing an API commit",
+              content: btoa("This is a test")
+            })
