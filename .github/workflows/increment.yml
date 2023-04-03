@@ -21,7 +21,7 @@ jobs:
               path: "number.txt"
             })
             console.log(file)
-            sha = file.sha
+            sha = file.data.sha
             github.rest.repos.createOrUpdateFileContents({
               owner: "jbergles",
               repo: "number-goes-up",
