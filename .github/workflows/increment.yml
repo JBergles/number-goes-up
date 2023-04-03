@@ -20,6 +20,7 @@ jobs:
               repo: "number-goes-up",
               path: "number.txt"
             })
+            console.log(file)
             sha = file.sha
             github.rest.repos.createOrUpdateFileContents({
               owner: "jbergles",
