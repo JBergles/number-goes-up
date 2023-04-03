@@ -1,7 +1,7 @@
 name: Test Increment Workflow
 
 permissions:
-  contents: read|write
+  contents: write
 
 on: workflow_dispatch
 
