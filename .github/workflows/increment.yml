@@ -19,6 +19,6 @@ jobs:
               owner: "jbergles",
               repo: "number-goes-up",
               path: "number.txt",
-              mesasge: "doing an API commit",
+              message: "doing an API commit",
               content: btoa("This is a test")
             })
