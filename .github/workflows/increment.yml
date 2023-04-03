@@ -1,8 +1,12 @@
 name: Test Increment Workflow
 
+on: workflow_dispatch
+
 jobs:
   increment:
     runs-on: ubuntu-latest
+
+    steps:
       - uses: actions/checkout@v2
 
       - uses: actions/github-script@v6
